@@ -4,96 +4,173 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Portfolio - Sabrine Bourobaa</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background-color: #f4f6f8;
+        }
+        .header-bg {
+            background-color: #2d3e50;
+            color: #fff;
+            padding: 40px 0;
+        }
+        .text-primary {
+            color: #ffd700;
+        }
+        .banner-title {
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+        .section-title {
+            font-size: 2rem;
+            color: #2d3e50;
+            margin-bottom: 20px;
+        }
+        .skill {
+            background-color: #ffffff;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+        .btn-primary-custom {
+            background-color: #ffd700;
+            color: #2d3e50;
+            border: none;
+        }
+        .btn-primary-custom:hover {
+            background-color: #ffca3a;
+        }
+    </style>
 </head>
 <body>
 
+    <!-- Header -->
     <header class="header-bg">
-        <nav class="navbar">
-            <h2 class="nav-title">
-                <span class="text-primary">S</span>A 
-                <span class="text-primary">B</span>RINE</h2>
-            <ul class="nav-list">
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="https://bd.linkedin.com/in/abdurrakibpro"><button class="btn-primary">Hire Me</button></a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <a class="navbar-brand" href="#"><span class="text-primary">S</span>A <span class="text-primary">B</span>RINE</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="btn btn-primary-custom">Hire Me</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
 
-        <div class="banner">
-            <div class="banner-text">
-                <h3 class="banner-subtitle">Hi, I am</h3>
-                <h1 class="banner-title">Sabrine Bourobaa</h1>
-                <p class="banner-description">Shot what able cold new see hold. Friendly as an betrayed formerly he. Morning because as to society behaved moments.</p>
-                <a href="cv.html"><button class="btn-primary">Download CV</button></a>
+            <div class="row align-items-center mt-5">
+                <div class="col-md-6">
+                    <h3 class="banner-subtitle">Hi, I am</h3>
+                    <h1 class="banner-title">Sabrine Bourobaa</h1>
+                    <p>I'm a designer & developer with a passion for web design. I enjoy developing simple, clean and slick websites that provide real value to the end user.</p>
+                    <a href="cv.png" class="btn btn-primary-custom">Download CV</a>
+                </div>
+                <div class="col-md-6 text-center">
+                    <img src="download.jpg" alt="Profile Image" class="img-fluid rounded-circle shadow">
+                </div>
             </div>
-            <section>
-            <div class="banner-image">
-                <img src="download.jpg" alt="Profile Image" class="img">
-            </div>
-        </section>
         </div>
     </header>
 
-    <section class="about">
-        <h3 class="section-title">About Me</h3>
-        <p class="section-description">I'm a designer & developer with a passion for web design. I enjoy developing simple, clean and slick websites that provide real value to the end user.</p>
-        <div class="about-info">
-            <div>
-                <p class="info-title">Name:</p>
-                <p class="info-description">Sabrine Bourobaa</p>
-            </div>
-            <div>
-                <p class="info-title">Email:</p>
-                <p class="info-description">Sabrinebouroba@gmail.com</p>
-            </div>
-            <div>
-                <p class="info-title">Speciality:</p>
-                <p class="info-description">Web Development</p>
-            </div>
-            <div>
-                <p class="info-title">Location:</p>
-                <p class="info-description">Mahdia</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="what-i-do">
-        <h3 class="section-title">What I Do</h3>
-        <div class="skills-container">
-            <div class="skill">
-                <p class="skill-title">Angular</p>
-                <p class="skill-description">Angular is a popular open-source web application framework.</p>
-            </div>
-            <div class="skill">
-                <p class="skill-title">HTML</p>
-                <p class="skill-description">HTML is the standard markup language used to create web pages.</p>
-            </div>
-            <div class="skill">
-                <p class="skill-title">Symfony</p>
-                <p class="skill-description">Symfony is a popular PHP framework used for building web applications.</p>
-            </div>
-            <div class="skill">
-                <p class="skill-title">CSS</p>
-                <p class="skill-description">CSS is used to style web pages.</p>
+    <!-- About Section -->
+    <section class="about py-5">
+        <div class="container text-center">
+            <h3 class="section-title">About Me</h3>
+            <p>I'm a designer & developer with a passion for web design. I enjoy developing simple, clean and slick websites that provide real value to the end user.</p>
+            <div class="row mt-4">
+                <div class="col-md-3">
+                    <p><strong>Name:</strong> Sabrine Bourobaa</p>
+                </div>
+                <div class="col-md-3">
+                    <p><strong>Email:</strong> Sabrinebouroba@gmail.com</p>
+                </div>
+                <div class="col-md-3">
+                    <p><strong>Speciality:</strong> Web Development</p>
+                </div>
+                <div class="col-md-3">
+                    <p><strong>Location:</strong> Mahdia</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <section class="contact">
-        <h3 class="section-title">Let's Connect</h3>
-        <p class="section-description">Please fill out the form to contact me.</p>
-        <form action="#">
-            <input type="text" placeholder="Your Name">
-            <input type="email" placeholder="Your Email">
-            <textarea placeholder="Message"></textarea>
-            <input type="submit" value="Submit">
-        </form>
+    <!-- Skills Section -->
+    <section class="what-i-do py-5 bg-light">
+        <div class="container text-center">
+            <h3 class="section-title">What I Do</h3>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="skill">
+                        <h5>Angular</h5>
+                        <p>Angular is a popular open-source web application framework.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="skill">
+                        <h5>HTML</h5>
+                        <p>HTML is the standard markup language used to create web pages.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="skill">
+                        <h5>Symfony</h5>
+                        <p>Symfony is a popular PHP framework used for building web applications.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="skill">
+                        <h5>CSS</h5>
+                        <p>CSS is used to style web pages.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
-    
+
+    <!-- Contact Section -->
+    <section class="contact py-5">
+        <div class="container text-center">
+            <h3 class="section-title">Let's Connect</h3>
+            <p>Please fill out the form to contact me.</p>
+            <form class="mt-4">
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <input type="text" class="form-control" placeholder="Your Name">
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <input type="email" class="form-control" placeholder="Your Email">
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <textarea class="form-control" placeholder="Message" rows="4"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary-custom">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Bootstrap JavaScript and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
 
+
+    
